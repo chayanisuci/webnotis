@@ -63,8 +63,8 @@
                 <thead>
                   <tr>
                     <th scope="col">ID</th>
-                    <th scope="col">Nama Surat</th>
-                    <th scope="col">Nomor Surat</th>
+                    <th scope="col">Unit Kerja</th>
+                    <th scope="col"></th>
                     <th scope="col">Age</th>
                     <th scope="col">Aksi</th>
                   </tr>
