@@ -200,15 +200,15 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title" style="color: #2C5C52; font-weight: bold;">Murid <span>| This Month</span></h5>
+                  <h5 class="card-title" style="color: #2C5C52; font-weight: bold;">Jenis Surat <span>| This Month</span></h5>
 
                   <div class="d-flex align-items-center">
                     <div class="card-icon d-flex align-items-center justify-content-center">
-                      <img src="assets/img/siswa.png">
+                      <img src="assets/img/letter.png">
                     </div>
                     <div class="ps-3">
                       <h6 style="color: #2C5C52; font-weight: bold;"> 1258</h6>
-                      <span class="text-muted small pt-2 ps-1">Orang</span>
+                      <span class="text-muted small pt-2 ps-1">Data</span>
 
                     </div>
                   </div>
@@ -235,15 +235,15 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title" style="color: #2C5C52; font-weight: bold;">Guru <span>| This Month</span></h5>
+                  <h5 class="card-title" style="color: #2C5C52; font-weight: bold;">Unit Kerja <span>| This Month</span></h5>
 
                   <div class="d-flex align-items-center">
                     <div class="card-icon d-flex align-items-center justify-content-center">
-                      <img src="assets/img/guru.png">
+                      <img src="assets/img/united.png">
                     </div>
                     <div class="ps-3">
                       <h6 style="color: #2C5C52; font-weight: bold;">1258</h6>
-                      <span class="text-muted small pt-2 ps-1">Orang</span>
+                      <span class="text-muted small pt-2 ps-1">Data</span>
 
                     </div>
                   </div>
@@ -271,15 +271,15 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Pegawai Tata Usaha <span>| This Month</span></h5>
+                  <h5 class="card-title">Rekap Surat <span>| This Month</span></h5>
 
                   <div class="d-flex align-items-center">
                     <div class="card-icon d-flex align-items-center justify-content-center">
-                      <img src="assets/img/tu.png">
+                      <img src="assets/img/repeat.png">
                     </div>
                     <div class="ps-3">
                       <h6 style="color: #2C5C52; font-weight: bold;">30</h6>
-                      <span class="text-muted small pt-2 ps-1">Orang</span>
+                      <span class="text-muted small pt-2 ps-1">Data</span>
 
                     </div>
                   </div>
@@ -288,158 +288,8 @@
 
               </div>
             </div><!-- End Pegawai TU -->
-
-            <!-- Pengawas Card -->
-            <div class="col-xxl-6 col-md-6">
-              <div class="card info-card sales-card">
-
-                <div class="filter">
-                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i></a>
-                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                    <li class="dropdown-header text-start">
-                      <h6>Filter</h6>
-                    </li>
-
-                    <li><a class="dropdown-item" href="#">Today</a></li>
-                    <li><a class="dropdown-item" href="#">This Month</a></li>
-                    <li><a class="dropdown-item" href="#">This Year</a></li>
-                  </ul>
-                </div>
-
-                <div class="card-body">
-                  <h5 class="card-title" style="color: #2C5C52; font-weight: bold;">Pengawas <span>| This Month</span></h5>
-
-                  <div class="d-flex align-items-center">
-                    <div class="card-icon d-flex align-items-center justify-content-center">
-                      <img src="assets/img/pengawas.png">
-                    </div>
-                    <div class="ps-3">
-                      <h6 style="color: #2C5C52; font-weight: bold;"> 10</h6>
-                      <span class="text-muted small pt-2 ps-1">Orang</span>
-
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div><!-- End Pengawas Card -->
-
-            <!-- Pembina Card -->
-            <div class="col-xxl-6 col-md-6">
-              <div class="card info-card revenue-card">
-
-                <div class="filter">
-                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i></a>
-                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                    <li class="dropdown-header text-start">
-                      <h6>Filter</h6>
-                    </li>
-
-                    <li><a class="dropdown-item" href="#">Today</a></li>
-                    <li><a class="dropdown-item" href="#">This Month</a></li>
-                    <li><a class="dropdown-item" href="#">This Year</a></li>
-                  </ul>
-                </div>
-
-                <div class="card-body">
-                  <h5 class="card-title" style="color: #2C5C52; font-weight: bold;">Pembina <span>| This Month</span></h5>
-
-                  <div class="d-flex align-items-center">
-                    <div class="card-icon d-flex align-items-center justify-content-center">
-                      <img src="assets/img/pembina.png">
-                    </div>
-                    <div class="ps-3">
-                      <h6 style="color: #2C5C52; font-weight: bold;">50</h6>
-                      <span class="text-muted small pt-2 ps-1">Orang</span>
-
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div><!-- End Pembina Card -->
-
-            <!-- Pegawai Koperasi -->
-            <div class="col-12">
-              <div class="card">
-
-                <div class="filter">
-                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i></a>
-                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                    <li class="dropdown-header text-start">
-                      <h6>Filter</h6>
-                    </li>
-
-                    <li><a class="dropdown-item" href="#">Today</a></li>
-                    <li><a class="dropdown-item" href="#">This Month</a></li>
-                    <li><a class="dropdown-item" href="#">This Year</a></li>
-                  </ul>
-                </div>
-
-                <div class="card-body">
-                  <h5 class="card-title">Pegawai Koperasi <span>| This Month</span></h5>
-
-                  <div class="d-flex align-items-center">
-                    <div class="card-icon d-flex align-items-center justify-content-center">
-                      <img src="assets/img/pegawai-koperasi.png">
-                    </div>
-                    <div class="ps-3">
-                      <h6 style="color: #2C5C52; font-weight: bold;">30</h6>
-                      <span class="text-muted small pt-2 ps-1">Orang</span>
-
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
-            </div><!-- End Pegawai Koperasi -->
-
-            <!-- News & Update -->
-            <div class="col-12">
-              <div class="card">
-
-                <div class="filter">
-                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots-vertical"></i></a>
-                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                    <li class="dropdown-header text-start">
-                      <h6>Filter</h6>
-                    </li>
-
-                    <li><a class="dropdown-item" href="#">Today</a></li>
-                    <li><a class="dropdown-item" href="#">This Month</a></li>
-                    <li><a class="dropdown-item" href="#">This Year</a></li>
-                  </ul>
-                </div>
-
-                <div class="card-body">
-                  <h5 class="card-title">News & Update <span>| This Month</span></h5>
-                  <div class="news">
-                    <div class="post-item clearfix">
-                      <img src="assets/img/kotak.png" alt="">
-                      <h4><a href="#" style="color: #2C5C52; font-weight: bold;">Presiden Jokowi Bicara Peran Siswa dan Ekonomi Indonesia </a></h4>
-                      <p>Zekola.site, SURABAYA-Perekonomian Indonesia dinilai baik-baik saja di tengah ketidakpastian perekonomian global akibat pandemi dan perang...</p>
-                    </div>
-                    <div class="post-item clearfix">
-                      <img src="assets/img/kotak.png" alt="">
-                      <h4><a href="#" style="color: #2C5C52; font-weight: bold;">Presiden Jokowi Bicara Peran Siswa dan Ekonomi Indonesia </a></h4>
-                      <p>Zekola.site, SURABAYA-Perekonomian Indonesia dinilai baik-baik saja di tengah ketidakpastian perekonomian global akibat pandemi dan perang...</p>
-                    </div>
-                    <div class="post-item clearfix">
-                      <img src="assets/img/kotak.png" alt="">
-                      <h4><a href="#" style="color: #2C5C52; font-weight: bold;">Presiden Jokowi Bicara Peran Siswa dan Ekonomi Indonesia </a></h4>
-                      <p>Zekola.site, SURABAYA-Perekonomian Indonesia dinilai baik-baik saja di tengah ketidakpastian perekonomian global akibat pandemi dan perang...</p>
-                    </div>
-                  </div>
-                  <a href="#" style="color: #2C5C52; font-weight: bold;">
-                    <center>Lainnya>>></center>
-                  </a>
-                </div>
-
-              </div>
-            </div><!-- End News & Update -->
-
-
+            
+            
           </div>
         </div><!-- End Left side columns -->
 
@@ -447,20 +297,7 @@
         <div class="col-lg-4">
           <!-- Kalender -->
           <div class="card">
-            <div class="filter">
-              <a class="icon" href="#" data-bs-toggle="dropdown"></a>
-              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                <li class="dropdown-header text-start">
-                  <h6>Filter</h6>
-                </li>
-
-                <li><a class="dropdown-item" href="#">Today</a></li>
-                <li><a class="dropdown-item" href="#">This Month</a></li>
-                <li><a class="dropdown-item" href="#">This Year</a></li>
-              </ul>
-            </div>
-
-            <div class="card-body pb-0 mt-3">
+            <div class="card-body pb-3 mt-3">
               <div class="wrapper">
                 <header>
                   <p class="current-date"></p>
@@ -482,36 +319,6 @@
                   <ul class="days"></ul>
                 </div>
               </div>
-            </div>
-
-            <div class="card-body pb-0">
-              <h5 class="card-title">Kalender <span>| This Month</span></h5>
-              <div class="news">
-                <div class="post-item clearfix">
-                  <img src="assets/img/kotak.png" alt="" style="width: 50px; margin-left: 20px;">
-                  <h4><a href="#" style="color: #2C5C52; font-weight: bold; ">Soccer Competition</a></h4>
-                  <p>20 March 2023 | 09.00 AM</p>
-                </div>
-                <div class="post-item clearfix">
-                  <img src="assets/img/kotak.png" alt="" style="width: 50px; margin-left: 20px;">
-                  <h4><a href="#" style="color: #2C5C52; font-weight: bold; ">Soccer Competition</a></h4>
-                  <p>20 March 2023 | 09.00 AM</p>
-                </div>
-                <div class="post-item clearfix">
-                  <img src="assets/img/kotak.png" alt="" style="width: 50px; margin-left: 20px;">
-                  <h4><a href="#" style="color: #2C5C52; font-weight: bold; ">Soccer Competition</a></h4>
-                  <p>20 March 2023 | 09.00 AM</p>
-                </div>
-                <div class="post-item clearfix">
-                  <img src="assets/img/kotak.png" alt="" style="width: 50px; margin-left: 20px;">
-                  <h4><a href="#" style="color: #2C5C52; font-weight: bold; ">Soccer Competition</a></h4>
-                  <p>20 March 2023 | 09.00 AM</p>
-                </div>
-              </div>
-
-              <a href="#" style="color: #2C5C52; font-weight: bold; ">
-                <center>Lainnya>>></center>
-              </a>
             </div>
           </div><!-- End Kalender -->
         </div><!-- End Right side columns -->

@@ -45,7 +45,7 @@
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.php">Home</a></li>
           <li class="breadcrumb-item">Jenis Surat</li>
-          <li class="breadcrumb-item active">Surat KeluarK</li>
+          <li class="breadcrumb-item active">Surat Keluar</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
@@ -57,15 +57,18 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Surat Keluar</h5>
-                <button type="button" class="btn btn-success my-3" data-bs-toggle="modal" data-bs-target="#tambah">Tambah Data</button>
+                <a href="tambahsuratkeluar.php" class="btn btn-tambah my-3">Tambah Data</a>
               <!-- Table with stripped rows -->
               <table class="table datatable">
                 <thead>
                   <tr>
                     <th scope="col">ID</th>
-                    <th scope="col">Nama Surat</th>
-                    <th scope="col">Nomor Surat</th>
-                    <th scope="col">Age</th>
+                    <th scope="col">Unit Kerja</th>
+                    <th scope="col">Jenis Surat</th>
+                    <th scope="col">Kode Surat</th>
+                    <th scope="col">Perihal</th>
+                    <th scope="col">Tanggal Surat</th>
+                    <th scope="col">Tujuan Surat</th>
                     <th scope="col">Aksi</th>
                   </tr>
                 </thead>
@@ -74,9 +77,12 @@
                     <th scope="row">1</th>
                     <td>Brandon Jacob</td>
                     <td>Designer</td>
+                    <td>Designer</td>
+                    <td>28</td>
+                    <td>Designer</td>
                     <td>28</td>
                     <td>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#edit"><i class="bi bi-pencil-square"></i></button>
+                        <a href="editsuratkeluar.php" type="button" class="btn btn-warning"><i class="bi bi-pencil-square"></i></a>
                         <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#hapus"><i class="bi bi-trash3-fill"></i></button>
                     </td>
                   </tr>
@@ -84,9 +90,12 @@
                     <th scope="row">2</th>
                     <td>Bridie Kessler</td>
                     <td>Developer</td>
+                    <td>Designer</td>
                     <td>35</td>
+                    <td>Designer</td>
+                    <td>28</td>
                     <td>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#edit"><i class="bi bi-pencil-square"></i></button>
+                        <a  href="editsuratkeluar.php" type="button" class="btn btn-warning" ><i class="bi bi-pencil-square"></i></a>
                         <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#hapus"><i class="bi bi-trash3-fill"></i></button>
                     </td>
                   </tr>
@@ -101,69 +110,6 @@
 
   </main><!-- End #main -->
   
-  <!-- modal tambah data-->
-  <div class="modal fade" id="tambah" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-       <div class="modal-content">
-          <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Tambah Data </h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-       </div>
-       <div class="modal-body">
-        <form action="">
-            <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Nama Surat</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-          <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Nomor Surat</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-          <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Age</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-        <button type="button" class="btn btn-success">Simpan</button>
-      </div>
-       </div>
-    </div>
-  </div>
-  
-  <!-- modal edit data -->
-  <div class="modal fade" id="edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-       <div class="modal-content">
-          <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Edit Data </h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-       </div>
-       <div class="modal-body">
-        <form action="">
-            <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Nama Surat</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-          <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Nomor Surat</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-          <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Age</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-        <button type="button" class="btn btn-success">Simpan</button>
-      </div>
-       </div>
-    </div>
-  </div>
   
   <!-- modal hapus data -->
   <div class="modal fade" id="hapus" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
