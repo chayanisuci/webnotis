@@ -98,5 +98,13 @@
           </li>
         </ul>
       </li><!-- End Tables Nav -->
+      
+      <li class="nav-item py-2">
+        <a class="nav-link " href="dtpengunjung.php">
+          <img class="img-sidebar mx-2 " src="assets/img/16.png">
+          <span>Data Pengunjung</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+      
     </ul>
   </aside><!-- End Sidebar-->

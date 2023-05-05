@@ -1,12 +1,3 @@
-<?php
-
-session_start(); // memulai session
-
-// hapus semua data session
-session_unset();
-session_destroy();
-?>
-
 <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
 
@@ -52,7 +43,7 @@ session_destroy();
             <li>
               <a class="dropdown-item d-flex align-items-center" href="#">
                 <i class="bi bi-box-arrow-right"></i>
-                <span>Sign Out</span>
+                <a href="logout.php">Sign Out</a>
               </a>
             </li>
 
