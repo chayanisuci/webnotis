@@ -1,36 +1,4 @@
-<?php
-session_start();
-include "proses/koneksi.php";
-$kon = new Koneksi();
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // Retrieve the input values
-    $username = $_POST['username'];
-    $password = md5($_POST['password']);
-    if (empty($_POST['username']) || empty(md5($_POST['password']))) {
-        $error = 'Masukan Username and Password.';
-    } else {
-        $abc = $kon->kueri("SELECT * FROM tb_admin WHERE username='$username' AND password= '$password' ");
-        $user = $kon->hasil_data($abc);
-        if (!$user) {
-            $error = 'Invalid Username atau Password.';
-        } else {
-            // Check if the password matches the hshed password stored in the database
-            if (($password == $user['password'])) {
-                // Passwords match, so create a session for the user and redirect to a secured page
-                $_SESSION['admin_id'] = $user['id_admin'];
-                $_SESSION['username'] = $user['username'];
-                $_SESSION['password'] = $user['password'];
-                header('Location: index.php');
-                exit;
-            } elseif ($password != $user['password']) {
-                // Passwords do not match, so display an error message
-                $error = 'Invalid Username atau Password.';
-            }
-        }
-    }
-}
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -39,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Pages / Login - NOTIS</title>
+  <title>Pages / Register - NOTIS</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -81,38 +49,47 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                   <span class="d-none d-lg-block">Notis</span>
                 </a>
               </div><!-- End Logo -->
-
+        
               <div class="card mb-3">
 
                 <div class="card-body">
 
                   <div class="pt-4 pb-2">
-                    <h5 class="card-title text-center pb-0 fs-4">Login Akun Anda</h5>
-                    <p class="text-center small">Masukan username & password </p>
+                    <h5 class="card-title text-center pb-0 fs-4">Silahkan Buat Akun Anda</h5>
+                    <p class="text-center small">Masukkan Data Dengan Benar</p>
                   </div>
 
-                  <form class="row g-3 needs-validation" method="POST">
-                  
+                  <form class="row g-3 needs-validation" method="post">
 
                     <div class="col-12">
-                      <label for="yourUsername" class="form-label">Username</label>
+                      <label for="yourNama" class="form-label">Nama</label>
                       <div class="input-group has-validation">
-                        <span class="input-group-text" id="inputGroupPrepend">@</span>
-                        <input type="text" name="username" class="form-control" required>
+                        <input type="text" name="nama" class="form-control" required>
                       </div>
                     </div>
 
                     <div class="col-12">
-                      <label for="yourPassword" class="form-label">Password</label>
-                      <input type="password" name="password" class="form-control" required>
+                      <label for="yourEmail" class="form-label">Email</label>
+                      <input type="text" name="email" class="form-control" required>
                     </div>
-
                     
                     <div class="col-12">
-                      <button class="btn btn-primary w-100" type="submit">Login</button>
+                      <label for="yourDate" class="form-label">Tanggal Permintaan</label>
+                      <div class="input-group has-validation">
+                        <input type="date" name="tgl" class="form-control">
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <label for="yourTujuan" class="form-label">Tujuan</label>
+                      <input type="text" name="tujuan" class="form-control" required>
                     </div>
                     
-                    <center><p style="font-size: 13px;">Jika Anda Pengunjung Silahkan untuk <a href="register.php"><b>Registrasi</b></a></p></center>
+                    <div class="col-12">
+                      <button class="btn btn-primary w-100" type="submit">Register</button>
+                    </div>
+                    
+                    <center><p style="font-size: 13px;">Jika Anda Admin Silahkan untuk <a href="login.php"><b>Login</b></a></p></center>
                     
                   </form>
 
@@ -131,6 +108,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     </div>
   </main><!-- End #main -->
+  
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -148,5 +126,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   <script src="assets/js/main.js"></script>
 
 </body>
+
 
 </html>
