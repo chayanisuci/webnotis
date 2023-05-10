@@ -1,12 +1,3 @@
-<?php
-// Create database connection using config file
-include_once("config.php");
-
-// Fetch all users data from database
-$result = mysqli_query($mysqli, "SELECT * FROM tb_pengunjung ORDER BY id DESC");
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -65,7 +56,6 @@ $result = mysqli_query($mysqli, "SELECT * FROM tb_pengunjung ORDER BY id DESC");
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Data Pengunjung</h5>
-                <a href="tmbhpengunjung.php" class="btn btn-tambah my-3">Tambah Data</a>
               <!-- Table with stripped rows -->
               <table class="table datatable">
                 <thead>
@@ -73,26 +63,33 @@ $result = mysqli_query($mysqli, "SELECT * FROM tb_pengunjung ORDER BY id DESC");
                     <th scope="col">ID</th>
                     <th scope="col">Nama</th>
                     <th scope="col">Email</th>
-                    <th scope="col">No. Telpon</th>
-                    <th scope="col">Alamat</th>
+                    <th scope="col">Tanggal Permintaan</th>
+                    <th scope="col">Tujuan</th>
                     <th scope="col">Aksi</th>
                   </tr>
                 </thead>
                 <tbody>
                 <?php
-                while($user_data = mysqli_fetch_array($result)) {
-                    echo "<tr>";
-                    echo "<td>".$user_data['nama']."</td>";
-                    echo "<td>".$user_data['email']."</td>";
-                    echo "<td>".$user_data['telp']."</td>";
-                    echo "<td>".$user_data['alamat']."</td>";
-                    echo  "<td>
-                         <a href='edtpengunjung.php?id=$user_data[id]' type='button' class='btn btn-warning'><i class='bi bi-pencil-square'></i></a>
-                         <a href='hpspengunjung.php?id=$user_data[id]' type='button' class='btn btn-danger' ><i class='bi bi-trash3-fill'></i></button>
-                         </td>
-                         </tr>";
-                }
-?>
+                include 'proses/koneksi.php';
+  $abc = mysqli_query($conn, "SELECT * FROM tb_pengunjung");
+  while($row = mysqli_fetch_array($abc)) {
+      echo "<tr>
+                <td>".$row['nama']."</td>
+                <td>".$row['email']."</td>
+                <td>".$row['tgl']."</td>
+                <td>".$row['tujuan']."</td>
+                <td></td></tr>";
+  } ?>
+                <tr>
+                    <td>Brandon Jacob</td>
+                    <td>Designer</td>
+                    <td>Designer</td>
+                    <td>28</td>
+                    <td>
+                        <a href="edtpengunjung.php" type="button" class="btn btn-warning"><i class="bi bi-pencil-square"></i></a>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#hapus"><i class="bi bi-trash3-fill"></i></button>
+                    </td>
+                  </tr>
                 </tbody>
               </table>
               <!-- End Table with stripped rows -->
