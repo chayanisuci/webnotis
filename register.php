@@ -1,4 +1,18 @@
+<?php
+include "proses/koneksi.php";
 
+$conn = new Koneksi();
+
+if(isset($_POST['subregis'])) {
+    $nama = htmlspecialchars($_POST['nama']);
+    $email = htmlspecialchars($_POST['email']);
+    $tgl = htmlspecialchars($_POST['tgl']);
+    $tujuan = htmlspecialchars($_POST['tujuan']);
+
+    $abc = $conn->kueri("INSERT INTO `tb_pengunjung`( `nama`, `email`, `tgl`, `tujuan`) VALUES ('$nama','$email','$tgl','$tujuan')");
+
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -59,7 +73,7 @@
                     <p class="text-center small">Masukkan Data Dengan Benar</p>
                   </div>
 
-                  <form class="row g-3 needs-validation" method="post">
+                  <form class="row g-3 needs-validation" method="POST">
 
                     <div class="col-12">
                       <label for="yourNama" class="form-label">Nama</label>
@@ -86,7 +100,7 @@
                     </div>
                     
                     <div class="col-12">
-                      <button class="btn btn-primary w-100" type="submit">Register</button>
+                      <button class="btn btn-primary w-100" type="submit" name="subregis" >Register</button>
                     </div>
                     
                     <center><p style="font-size: 13px;">Jika Anda Admin Silahkan untuk <a href="login.php"><b>Login</b></a></p></center>
